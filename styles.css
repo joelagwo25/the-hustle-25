@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); /* Graffiti-style font */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-image: url('images/background.jpg'); /* Your first image: graffiti H25 */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Cross-hatch shadow effect */
+}
+
+header {
+    background-image: url('images/header-banner.jpg'); /* Your second image: THE HUSTLE 25 banner */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 255, 255, 0.3)); /* Cyan drip effect */
+    filter: blur(5px); /* Graffiti drip blur */
+}
+
+h1, h2 {
+    font-family: 'Permanent Marker', cursive; /* Graffiti font */
+    color: #00ffff; /* Cyan neon */
+    text-shadow: 0 0 10px #ff0000, 2px 2px 0 #ff0000; /* Red outline/glow for punk edge */
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #00ffff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff0000; /* Red hover for energy */
+}
+
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent for gritty overlay */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red glow shadow */
+}
+
+.episode {
+    border-bottom: 1px solid #00ffff;
+    padding: 10px 0;
+}
+
+.comment {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #ff0000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #00ffff;
+    color: #fff;
+}
+
+button {
+    background: #ff0000;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00ffff;
+    color: #000;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    header {
+        height: 200px;
+    }
+}
